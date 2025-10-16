@@ -1,98 +1,142 @@
-  <!DOCTYPE html> 
-  <html>
-  <head>
-    <title>Product Landing Page</title>
-    <link href="style.css"/>
-  </head>
-  <body>
-   <h1 id="title">David's Cupcakes</h1> 
-   <header id="header">
-     <img id="header-img" src=https://raw.githubusercontent.com/CMULS/Product-Landing-Page/refs/heads/main/Copilot_20251016_131229.png"" alt="Logo">
-    <nav id="nav-bar">
-      <a class="nav-link" href="#header">Section 1</a>
-      <a class="nav-link" href="#header-img">Section 2</a>
-      <a class="nav-link" href="#video">Section 3</a>
-      </nav>
-    </header>
-    
-    <video id="video" src="product-video.mp4" controls></video>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input id="email" type="email" name="email" placeholder="Enter your email" required>
-      <input id="submit" type="submit" value="Submit">
-      </form>
-      <section id="section 1">
-        <h2>Red velvet Cupcakes</h2>
-        <p>Our red velvet Cupcakes are going for dicounted fee of K8 each!</p>
-     </section>
-     <section id="section2">
-        <h2>Vanila Cupcakes</h2>
-        <p>Our vanila cupcakes are going for a discounted fee of K5 each!</p>
-      </section>
-      <section id"section3">
-        <h2>Choc-chip Cupcakes</h2>
-        <p>Our chocolate chip Cupcakes are going for a discounted fee of K10 each!</p>
-        </section>
-    </body>
-    
-    </html>
-        <style>
-     @media (max-width: 600px) {
-        body {
-        background-color: #00ff00;
-      }
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
+
+    /* Header/Nav Bar Styling */
     #header {
-      padding: 30px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      align-items: center;
-      justify-content: space-between;
-    } 
-    #header-img {
-      height: 50px;
-    } 
-    #nav-bar {
       position: fixed;
       top: 0;
       width: 100%;
       background-color: #808080;
       display: flex;
-    } 
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      box-sizing: border-box;
+      z-index: 1000;
+    }
+
+    #header-img {
+      height: 60px;
+    }
+
+    #nav-bar {
+      display: flex;
+      gap: 20px;
+    }
+
     .nav-link {
-      margin-right: 20px;
-    } 
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ffcccb;
+    }
+
+    /* Title styling (moved below nav bar) */
+    #title {
+      margin-top: 120px;
+      text-align: center;
+    }
+
+    /* Video styling */
     #video {
       width: 100%;
       height: auto;
-    } 
+    }
+
+    /* Form styling */
     #form {
       margin-top: 30px;
-    } 
+      text-align: center;
+    }
+
     #email {
-      width: 400px;
-      padding: 20px;
-      margin-right: 20px;
-    } 
+      width: 300px;
+      padding: 10px;
+      margin-right: 10px;
+    }
+
     #submit {
-      padding: 20px 30px;
+      padding: 10px 20px;
       background-color: #808080;
-      color: black;
+      color: white;
       border: none;
       cursor: pointer;
-    } 
+    }
+
+    #submit:hover {
+      background-color: #666666;
+    }
+
     section { 
       padding: 50px;
-    } 
-    #header-img {
-      margin-bottom: 10px;
-    } 
-    #email {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 20px;
-    } 
-    #submit { 
-      width: 100%;
+      text-align: center;
     }
-    </style> 
+
+    /* Responsive for small screens */
+    @media (max-width: 600px) {
+      #header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #email, #submit {
+        width: 100%;
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <img id="header-img" src="https://raw.githubusercontent.com/CMULS/Product-Landing-Page/refs/heads/main/Copilot_20251016_131229.png" alt="Logo">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#section1">Section 1</a>
+      <a class="nav-link" href="#section2">Section 2</a>
+      <a class="nav-link" href="#section3">Section 3</a>
+    </nav>
+  </header>
+
+  <h1 id="title">Dave's Cupcakes</h1> 
+
+  <video id="video" src="product-video.mp4" controls></video>
+
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input id="email" type="email" name="email" placeholder="Enter your email" required>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+
+  <section id="section1">
+    <h2>Red Velvet Cupcakes</h2>
+    <p>Our red velvet cupcakes are going for a discounted fee of $8 each!</p>
+  </section>
+
+  <section id="section2">
+    <h2>Vanilla Cupcakes</h2>
+    <p>Our vanilla cupcakes are going for a discounted fee of $5 each!</p>
+  </section>
+
+  <section id="section3">
+    <h2>Choc-chip Cupcakes</h2>
+    <p>Our chocolate chip cupcakes are going for a discounted fee of $10 each!</p>
+  </section>
+</body>
+</html>
+
