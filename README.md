@@ -7,7 +7,7 @@
   <body>
    <h1 id="title">David's Cupcakes</h1> 
    <header id="header">
-     <img id="header-img" src="logo.png" alt="Logo">
+     <img id="header-img" src=https://raw.githubusercontent.com/CMULS/Product-Landing-Page/refs/heads/main/Copilot_20251016_131229.png"" alt="Logo">
     <nav id="nav-bar">
       <a class="nav-link" href="#header">Section 1</a>
       <a class="nav-link" href="#header-img">Section 2</a>
