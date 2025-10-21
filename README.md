@@ -101,6 +101,15 @@
         margin: 5px 0;
       }
     }
+          #img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        } 
+      
   </style>
 </head>
 
@@ -125,16 +134,19 @@
 
   <section id="section1">
     <h2>Red Velvet Cupcakes</h2>
+    <img id="img" src="https://raw.githubusercontent.com/CMULS/Product-Landing-Page/refs/heads/main/Copilot_20251016_145131.png" alt= "red velvet">
     <p>Our red velvet cupcakes are going for a discounted fee of $8 each!</p>
   </section>
 
   <section id="section2">
     <h2>Vanilla Cupcakes</h2>
+    <img id="img" src="https://raw.githubusercontent.com/CMULS/Product-Landing-Page/refs/heads/main/Copilot_20251016_154915.png" alt= "vanilla">
     <p>Our vanilla cupcakes are going for a discounted fee of $5 each!</p>
   </section>
 
   <section id="section3">
     <h2>Choc-chip Cupcakes</h2>
+    <img id="img" src="https://raw.githubusercontent.com/CMULS/Product-Landing-Page/refs/heads/main/Copilot_20251016_154900.png" alt= "chocolate chip">
     <p>Our chocolate chip cupcakes are going for a discounted fee of $10 each!</p>
   </section>
 </body>
