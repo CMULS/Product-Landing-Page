@@ -1,4 +1,4 @@
-<!DOCTYPE html>   
+<!DOCTYPE html>    
 <html>
 <head>
   <title>Product Landing Page</title>
@@ -132,7 +132,7 @@
     <input id="submit" type="submit" value="Submit">
   </form>
 
-  <section id="section1">
+  <section id="section1"> 
     <h2>Red Velvet Cupcakes</h2>
     <img id="img" src="https://raw.githubusercontent.com/CMULS/Product-Landing-Page/refs/heads/main/Copilot_20251016_145131.png" alt= "red velvet">
     <p>Our red velvet cupcakes are going for a discounted fee of $8 each!</p>
